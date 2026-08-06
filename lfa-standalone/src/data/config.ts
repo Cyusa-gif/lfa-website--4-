@@ -5,8 +5,8 @@ export const lfaConfig = {
   ageGroups: [
     { age: '5–7 Years', stage: 'Foundation', color: '#22c55e', icon: 'seedling' },
     { age: '8–9 Years', stage: 'Grassroots', color: '#3b82f6', icon: 'clock' },
-    { age: '10–11 Years', stage: 'Development', color: '#f97316', icon: 'lightning' },
-    { age: '12–13 Years', stage: 'Elite Youth', color: '#9333ea', icon: 'trophy' }
+    { age: '10–12 Years', stage: 'Development', color: '#f97316', icon: 'lightning' },
+    { age: '13–15 Years', stage: 'Elite Youth', color: '#9333ea', icon: 'trophy' }
   ],
   pricing: {
     monthly: '50,000 RWF',
@@ -20,8 +20,8 @@ export const lfaConfig = {
   schedules: {
     holiday: {
       days: 'Monday, Wednesday & Friday',
-      timeTueThu: '8:00 AM – 11:30 AM',
-      timeSat: '8:00 AM – 11:30 AM'
+      timeTueThu: '9:00 AM – 11:00 AM',
+      timeSat: '9:00 AM – 11:00 AM'
     },
     term: {
       days: 'Friday & Saturday',

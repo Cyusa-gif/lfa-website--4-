@@ -14,8 +14,8 @@ const formSchema = z.object({
   ageStage: z.enum([
     '5-7 Years (Foundation)',
     '8-9 Years (Grassroots)',
-    '10-11 Years (Development)',
-    '12-13 Years (Elite Youth)'
+    '10-12 Years (Development)',
+    '13-15 Years (Elite Youth)'
   ], { required_error: 'Please select an age stage' }),
   phone: z.string().min(1, 'Phone number is required'),
   program: z.enum(
@@ -112,7 +112,7 @@ export function Registration() {
         {/* Registration form */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-200 shadow-sm">
           <div className="mb-8">
-            <h3 className="text-2xl font-black text-[#1a2744] uppercase tracking-tight mb-2">Online Interest Form</h3>
+            <h3 className="text-2xl font-black text-[#1a2744] uppercase tracking-tight mb-2">Online Registration Form</h3>
             <p className="text-gray-600">Submit your details and we will contact you to complete the registration.</p>
           </div>
 
@@ -147,8 +147,8 @@ export function Registration() {
                   <option value="">Select age stage</option>
                   <option value="5-7 Years (Foundation)">5–7 Years (Foundation)</option>
                   <option value="8-9 Years (Grassroots)">8–9 Years (Grassroots)</option>
-                  <option value="10-11 Years (Development)">10–11 Years (Development)</option>
-                  <option value="12-13 Years (Elite Youth)">12–13 Years (Elite Youth)</option>
+                  <option value="10-12 Years (Development)">10–12 Years (Development)</option>
+                  <option value="13-15 Years (Elite Youth)">13–15 Years (Elite Youth)</option>
                 </select>
                 {form.formState.errors.ageStage && <p className="text-red-500 text-xs">{form.formState.errors.ageStage.message}</p>}
               </div>

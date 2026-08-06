@@ -37,7 +37,7 @@ export function Hero() {
           </div>
           <div className="border-2 border-white/30 text-white font-medium px-6 py-3 rounded-full text-sm md:text-base flex items-center gap-2 backdrop-blur-sm">
             <MapPin className="w-4 h-4 text-[#f5c112]" />
-            Under-13 Academy &middot; Kigali, Rwanda
+            Under-15 Academy &middot; Kigali, Rwanda
           </div>
         </motion.div>
       </div>
